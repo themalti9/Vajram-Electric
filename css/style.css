@@ -541,11 +541,15 @@ main section.partnerships-brands h6 {
   color: #4C4C4C;
   padding-top: 40px;
 }
-main section.partnerships-brands ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 70px;
+main section.partnerships-brands .imgslider {
+  padding: 70px 0px;
+}
+main section.partnerships-brands .imgslider img {
+  height: 60px;
+  filter: grayscale(1);
+}
+main section.partnerships-brands .imgslider img:hover {
+  filter: grayscale(0);
 }
 main section.form-section .form-body .leftSec {
   background: url("../img/form_scooty_img.svg") center center no-repeat;
@@ -590,6 +594,7 @@ main section.become-community .wrapper ul li button {
   outline: none;
   color: #fff;
   margin-top: 28px;
+  cursor: pointer;
 }
 main section.become-community .wrapper ul li img {
   margin-left: 60px;
@@ -643,26 +648,64 @@ main section.investors .bx-wrapper .bx-pager.bx-default-pager a {
 main section.investors .bx-wrapper .bx-pager.bx-default-pager a.active {
   background: #5666F2;
 }
-main section.investors .sliders ul {
+main section.investors .owl-theme .owl-nav.disabled + .owl-dots {
   display: flex;
-  justify-content: start;
-  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  bottom: 55px;
+  right: 54px;
+  outline: none;
 }
-main section.investors .sliders ul li {
+main section.investors .owl-theme .owl-nav.disabled + .owl-dots .owl-dot {
+  outline: none;
+}
+main section.investors .owl-theme .owl-nav.disabled + .owl-dots .owl-dot span {
+  border: 2px solid #5666F2;
+  background: transparent;
+  width: 12px;
+  height: 12px;
+}
+main section.investors .owl-theme .owl-nav.disabled + .owl-dots .owl-dot.active span {
+  background: #5666F2;
+}
+main section.investors .testimonial {
+  padding-bottom: 63px;
+  position: relative;
+  width: 874px;
+  margin: 0 auto;
+}
+main section.investors .testimonial:after {
+  content: "";
+  background: url(../img/carbon_quotes.svg) no-repeat;
+  position: absolute;
+  top: -33px;
+  left: -44px;
+  z-index: 1;
+  width: 84.22px;
+  height: 84.22px;
+}
+main section.investors .testimonial .slider-item {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  flex-direction: row;
   align-items: center;
+  background: #FFFFFF;
+  padding: 46px 66px;
+  border-radius: 15px;
 }
-main section.investors .sliders ul li:first-child {
-  height: 142px;
+main section.investors .testimonial .slider-item .left {
+  width: 198px;
+  margin-right: 50px;
+  flex: none;
+  text-align: center;
 }
-main section.investors .sliders ul li:last-child {
-  width: 570px;
+main section.investors .testimonial .slider-item .left img {
+  border: 1.05276px solid #ADADAD;
+  border-radius: 84.2211px;
+  width: 75px;
+  height: 75px;
+  margin: 0 auto;
 }
-main section.investors .sliders ul li h6 {
-  padding: 0;
-  margin: 0;
+main section.investors .testimonial .slider-item .left h5 {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 500;
@@ -670,8 +713,9 @@ main section.investors .sliders ul li h6 {
   line-height: 126%;
   letter-spacing: 0.04em;
   color: #4C4C4C;
+  margin-top: 12px;
 }
-main section.investors .sliders ul li span {
+main section.investors .testimonial .slider-item .left span {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 300;
@@ -680,7 +724,7 @@ main section.investors .sliders ul li span {
   letter-spacing: 0.04em;
   color: #4C4C4C;
 }
-main section.investors .sliders ul li p {
+main section.investors .testimonial .slider-item p {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 300;
@@ -688,7 +732,6 @@ main section.investors .sliders ul li p {
   line-height: 126%;
   letter-spacing: 0.04em;
   color: #9F9F9F;
-  padding-left: 61px;
 }
 main section.investors .form-section {
   background: #FFFFFF;
@@ -824,6 +867,7 @@ main section.investors .form-section .form-body .rightSec .invest-form .investBt
   color: #FFFFFF;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 main section.investors .form-section .form-body .rightSec .invest-form .investBtn:hover {
   color: #ffffff;
@@ -849,6 +893,7 @@ footer .wrapper ul li a {
   line-height: 18px;
   text-transform: capitalize;
   color: #FBFDFF;
+  text-decoration: none;
 }
 footer .wrapper ul li:first-child {
   width: 360px;
@@ -1043,6 +1088,7 @@ footer .wrapper .copy-right {
   height: 55px;
   color: #fff;
   border: none;
+  cursor: pointer;
 }
 
 #thankyou .modal-dialog {
@@ -1097,6 +1143,7 @@ footer .wrapper .copy-right {
   border: none;
   width: 277px;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 #upcomingappointment .modal-dialog {

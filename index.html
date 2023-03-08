@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/jqueryui.css">
     <link rel="stylesheet" href="css/aos.css" type="text/css" media="all">
 
-    <link rel="stylesheet" href="css/style.css" type="text/css"  media="all">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
 
 
     <script type="text/javascript">
@@ -338,14 +338,14 @@
                     <div class="col">
                         <h6>Our Partnerships and Collaborations</h6>
 
-                        <ul class="imgslider">
-                            <li><img src="img/black_amazon_logo.svg" alt="Amazon logo" /></li>
-                            <li><img src="img/black_muving.svg" alt="Muving logo" /></li>
-                            <li><img src="img/black_fbl_logo.svg" alt="fBL logo" /></li>
-                            <li><img src="img/black_dominos_logo.svg" alt="Dominos logo" /></li>
-                            <li><img src="img/black_bigbasket.svg" alt="bigbasket logo" /></li>
-                            <li><img src="img/black_shadowfax_logo.svg" alt="shadowfax logo" /></li>
-                            <li><img src="img/black_dhl.svg" alt="DHL logo" /></li>
+                        <ul class="imgslider  owl-carousel owl-theme">
+                            <img src="img/amazon-logo.svg" alt="Amazon logo" />
+                            <img src="img/logo_moving.svg" alt="Muving logo" />
+                            <img src="img/fdl-logo.svg" alt="fBL logo" />
+                            <img src="img/dominos_pizza_logo.svg" alt="Dominos logo" />
+                            <img src="img/bigbisket-logo.svg" alt="bigbasket logo" />
+                            <img src="img/logo_shadowfax.svg" alt="shadowfax logo" />
+                            <img src="img/dhl-logo.svg" alt="DHL logo" />
                         </ul>
                     </div>
                 </div>
@@ -379,51 +379,32 @@
                 <div class="row">
                     <div class="col">
                         <h6>Here’s what our investors have to say</h6>
-                        <div class="sliders">
-                            <div class="slider-item item-one">
-                                <ul>
-                                    <li>
-                                        <img src="img/aditya_singh.svg" alt="Aditya Singh">
-                                        <h6>Aditya Singh</h6>
-                                        <span>Angel Investor, India</span>
-                                    </li>
-                                    <li>
-                                        <p>I tried multiple platforms for my investments but I found that Vajram
-                                            Electric has
-                                            given
-                                            me desirable returns and profits. Great team to work with.</p>
-                                    </li>
-                                </ul>
+                        <div class="testimonial sliders  owl-carousel owl-theme">
+                            <div class="slider-item">
+                                <div class="left">
+                                    <img src="img/aditya_singh.svg" alt="Aditya Singh">
+                                    <h5>Aditya Singh</h5>
+                                    <span>Angel Investor, India</span>
+                                </div>
+                                <div class="right">
+                                    <p>I tried multiple platforms for my investments but I found that Vajram
+                                        Electric has
+                                        given
+                                        me desirable returns and profits. Great team to work with.</p>
+                                </div>
                             </div>
-                            <div class="slider-item item-two">
-                                <ul>
-                                    <li>
-                                        <img src="img/aditya_singh.svg" alt="Aditya Singh">
-                                        <h6>Aditya Singh</h6>
-                                        <span>Angel Investor, India</span>
-                                    </li>
-                                    <li>
-                                        <p>I tried multiple platforms for my investments but I found that Vajram
-                                            Electric has
-                                            given
-                                            me desirable returns and profits. Great team to work with.</p>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="slider-item item-three">
-                                <ul>
-                                    <li>
-                                        <img src="img/aditya_singh.svg" alt="Aditya Singh">
-                                        <h6>Aditya Singh</h6>
-                                        <span>Angel Investor, India</span>
-                                    </li>
-                                    <li>
-                                        <p>I tried multiple platforms for my investments but I found that Vajram
-                                            Electric has
-                                            given
-                                            me desirable returns and profits. Great team to work with.</p>
-                                    </li>
-                                </ul>
+                            <div class="slider-item">
+                                <div class="left">
+                                    <img src="img/aditya_singh.svg" alt="Aditya Singh">
+                                    <h5>Aditya Singh</h5>
+                                    <span>Angel Investor, India</span>
+                                </div>
+                                <div class="right">
+                                    <p>I tried multiple platforms for my investments but I found that Vajram
+                                        Electric has
+                                        given
+                                        me desirable returns and profits. Great team to work with.</p>
+                                </div>
                             </div>
                         </div>
 
@@ -653,11 +634,11 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
+    <!-- <script src="js/owl.carousel.js"></script> -->
+   
     <script src="js/jquery.js"></script>
     <script src="js/jqueryui.js"></script>
-
+    <script src="js/owl.carousel.min.js"></script>
     <script src="js/aos.js"></script>
 
 
@@ -687,19 +668,36 @@
                 }
             });
         }
-
-        // <!-- Jquery slider -->
-        $(document).ready(function () {
-            $('.sliders').bxSlider();
-           
-        });
-
         // <!-- date picker  --> 
         $(function () {
             $("#datepicker").datepicker({
                 dateFormat: "dd-mm-yy",
                 duration: "fast"
             });
+        });
+
+        $(".imgslider").owlCarousel({
+            items: 7,
+            nav: true,
+            dots: false,
+            loop: true,
+            margin: 30,
+            autoWidth:true,
+            autoplay: true,
+            autoplaySpeed: 1000,
+            autoplayTimeout: 3000,
+            // navText: ["<img src='img/arrow-left.svg'>", "<img src='img/arrow-right.svg'>"]
+        });
+        $(".testimonial").owlCarousel({
+            items: 1,
+            nav: false,
+            dots: true,
+            loop: true,
+            margin: 0,
+            autoplay: false,
+            autoplaySpeed: 2000,
+            autoplayTimeout: 6000,
+            // navText: ["<img src='img/arrow-left.svg'>", "<img src='img/arrow-right.svg'>"]
         });
     </script>
 </body>
