@@ -1,0 +1,1230 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Rubik:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+::-webkit-scrollbar {
+  width: 8px;
+  height: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  background: #989898;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 0;
+  background: #eee;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato";
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+p {
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+header .navbar {
+  background: #14172B;
+}
+header .navbar .collapse {
+  justify-content: end;
+}
+header .navbar .collapse .navbar-nav {
+  align-items: center;
+}
+header .navbar .collapse .navbar-nav a.nav-item {
+  padding-right: 50px;
+  padding-left: 0px;
+  transition: 0.5s;
+}
+header .navbar .collapse .navbar-nav a.nav-item:hover {
+  background: linear-gradient(196.73deg, #5666F2 -2216.55%, #B756F2 42.91%, #F256D9 2255.79%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+header .navbar .collapse .navbar-nav a.investBtn {
+  background: #5666F2 !important;
+  border-radius: 10px;
+  padding: 18px 40px;
+  color: #FFFFFF;
+  border: 1px solid transparent;
+  transition: 0.5s;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+}
+header .navbar .collapse .navbar-nav a.investBtn:hover {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+main section.banner-section {
+  background: url("../img/scooty_img.jpg") center center no-repeat;
+  background-size: 100%;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+}
+main section.banner-section .banner-sec {
+  max-width: 733px;
+  color: #FFFFFF;
+}
+main section.banner-section .banner-sec h1 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.9rem;
+  line-height: 60px;
+  margin-bottom: 28px;
+  letter-spacing: -0.015em;
+  color: #F9F9FF;
+}
+main section.banner-section .banner-sec p {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 50px;
+  width: 653px;
+}
+main section.banner-section .banner-sec .twoBtns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 35px;
+}
+main section.banner-section .banner-sec .twoBtns button {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  border-radius: 10px;
+  padding: 18px 40px;
+  color: #fff;
+  background: transparent;
+  border: 1px solid silver;
+  transition: 0.3s;
+  cursor: pointer;
+}
+main section.banner-section .banner-sec .twoBtns button:first-child {
+  background: #5666F2;
+  border: 1px solid #5666F2;
+}
+main section.banner-section .banner-sec .grey-sec {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 22px 1px;
+  gap: 10px;
+  margin: 0;
+  height: 100%;
+  padding: 32px 26px;
+  width: 584px;
+  height: 147px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  margin-top: 40px;
+}
+main section.banner-section .banner-sec .grey-sec .grey-sec-child {
+  list-style: none;
+  width: calc(100% - 50px);
+  padding: 0px 17px;
+  text-align: center;
+  color: #4C4C4C;
+  border-right: 0.5px solid rgba(76, 76, 76, 0.6);
+}
+main section.banner-section .banner-sec .grey-sec .grey-sec-child:last-child {
+  border: none;
+}
+main section.banner-section .banner-sec .grey-sec .grey-sec-child span {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 34px;
+  color: #4C4C4C;
+}
+main section.banner-section .banner-sec .grey-sec .grey-sec-child p {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 126%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #4C4C4C;
+  margin: 0;
+  display: inline;
+}
+main section.why-invest {
+  background: url("../img/bgImg.svg") center center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+main section.why-invest .invest-content {
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main section.why-invest .invest-content h5 {
+  margin-bottom: 60px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  color: #5666F2;
+  background-image: -webkit-linear-gradient(0deg, #5666F2 5%, #B756F2 45%, #F256D9 45%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+main section.why-invest .invest-content ul.invest-sections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main section.why-invest .invest-content ul.invest-sections li {
+  width: 300px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  margin: 15px;
+  padding: 24px;
+}
+main section.why-invest .invest-content ul.invest-sections li h6 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #3340B0;
+  margin: 12px auto;
+}
+main section.why-invest .invest-content ul.invest-sections li p {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #9F9F9F;
+}
+main section.why-invest .invest-content .token-folio {
+  position: relative;
+  top: 118px;
+}
+main section.why-invest .invest-content .token-folio .tokenfolio_con {
+  background: url("../img/black_patch.svg") center center no-repeat;
+  background-size: 100% 100%;
+  padding: 100px;
+  width: 100%;
+  height: 100%;
+}
+main section.why-invest .invest-content .token-folio .tokenfolio_con ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 912px;
+  height: 100%;
+  margin: auto;
+}
+main section.why-invest .invest-content .token-folio .tokenfolio_con ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  height: 236px;
+  justify-content: space-between;
+}
+main section.why-invest .invest-content .token-folio .tokenfolio_con ul li h4 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  color: #FFFFFF;
+}
+main section.why-invest .invest-content .token-folio .tokenfolio_con ul li h4 span {
+  background: linear-gradient(94.77deg, #5666F2 1.16%, #B756F2 62.07%, #F256D9 108.47%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+main section.why-invest .invest-content .token-folio .tokenfolio_con ul li p {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+main section.why-invest .invest-content .token-folio .tokenfolio_con ul li button {
+  padding: 18px 40px;
+  background: #14172B;
+  border: 2px solid #FFFFFF;
+  border-radius: 10px;
+  color: #fff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+main section.solving-problem {
+  padding-top: 150px;
+  padding-bottom: 70px;
+}
+main section.solving-problem .content h6 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: #4C4C4C;
+  margin-bottom: 44px;
+}
+main section.solving-problem .content #accordion .card {
+  border: none;
+  margin-bottom: 18px;
+}
+main section.solving-problem .content #accordion .card .card-header {
+  padding: 0;
+  border: none;
+  background: no-repeat;
+}
+main section.solving-problem .content #accordion .card .card-header h5 button {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  outline: none;
+  text-decoration: none;
+}
+main section.solving-problem .content #accordion .card .card-header h5 button img {
+  transform: rotate(0deg);
+}
+main section.solving-problem .content #accordion .card .card-header h5 button p {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 126%;
+  letter-spacing: 0.04em;
+  color: #3340B0;
+}
+main section.solving-problem .content #accordion .card .card-header h5 button p img {
+  margin-right: 18px;
+  transform: rotate(0deg);
+  max-width: 40px;
+}
+main section.solving-problem .content #accordion .card .card-header h5 button:hover {
+  text-decoration: none;
+}
+main section.solving-problem .content #accordion .card .card-header h5 button.collapsed {
+  text-decoration: none;
+}
+main section.solving-problem .content #accordion .card .card-header h5 button.collapsed img {
+  transform: rotate(180deg);
+}
+main section.solving-problem .content #accordion .card .card-header h5 button.collapsed p img {
+  transform: rotate(0deg);
+}
+main section.solving-problem .content #accordion .card .collapse,
+main section.solving-problem .content #accordion .card .collapsing {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 126%;
+  letter-spacing: 0.04em;
+  color: #9F9F9F;
+  padding-left: 60px;
+  padding-right: 25px;
+  text-decoration: none !important;
+}
+main section.solving-problem .content #accordion .card .collapse .card-body,
+main section.solving-problem .content #accordion .card .collapsing .card-body {
+  padding: 0;
+}
+main .content-img img {
+  width: 100%;
+}
+main section.cards {
+  background: #F9F9FF;
+  padding: 67px 0;
+}
+main section.cards .cards-item {
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: -3px -3px 16px rgba(0, 0, 0, 0.1882352941);
+  border-radius: 20px;
+  position: relative;
+  transition: 0.3s;
+}
+main section.cards .cards-item img {
+  width: 100%;
+}
+main section.cards .cards-item:hover {
+  transform: scale(1.02);
+}
+main section.cards .cards-item .label {
+  background: #5666F2;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.51);
+  border-radius: 2px 50px 50px 0px;
+  position: absolute;
+  top: 10px;
+  left: -9px;
+  padding: 4px 18px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+main section.cards .cards-item .label:after {
+  content: "";
+  background: #3340B0;
+  border-radius: 0px 6.82044px 0px 0px;
+  transform: rotate(181deg);
+  position: absolute;
+  left: 1px;
+  bottom: -5px;
+  width: 8.3px;
+  height: 5.88px;
+  z-index: 1;
+}
+main section.cards .cards-item .cards-content {
+  padding: 20px 28px;
+}
+main section.cards .cards-item .cards-content h5 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 20px;
+  color: #323232;
+  margin-bottom: 13px;
+}
+main section.cards .cards-item .cards-content p {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 20px;
+  color: #323232;
+  margin: 0;
+}
+main section.howitworks {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(231, 233, 250, 0.4) 100%);
+  border-radius: 10px;
+  height: 635px;
+}
+main section.howitworks h5 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  color: #000000;
+  padding-top: 70px;
+}
+main section.howitworks .wrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+main section.howitworks .wrapper .dottedArr1,
+main section.howitworks .wrapper .dottedArr2 {
+  position: absolute;
+  left: 25%;
+  top: 19%;
+  width: 210px;
+}
+main section.howitworks .wrapper .dottedArr2 {
+  left: 55%;
+}
+main section.howitworks .wrapper .box-body {
+  width: 33.3333333333%;
+  text-align: center;
+}
+main section.howitworks .wrapper .box-body .number_img {
+  width: 50px;
+  height: 106px;
+  position: relative;
+  top: 31px;
+}
+main section.howitworks .wrapper .box-body .box-content {
+  background: url("../img/curvebox.svg") center center no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 39px;
+}
+main section.howitworks .wrapper .box-body .box-content img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 35px;
+}
+main section.howitworks .wrapper .box-body .box-content h6 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #323232;
+  margin: 0;
+  padding-bottom: 15px;
+}
+main section.howitworks .wrapper .box-body .box-content p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #ADADAD;
+}
+main section.partnerships-brands h6 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  color: #4C4C4C;
+  padding-top: 40px;
+}
+main section.partnerships-brands ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
+}
+main section.form-section .form-body .leftSec {
+  background: url("../img/form_scooty_img.svg") center center no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+}
+main section.become-community {
+  background: #14172B;
+  box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.25);
+}
+main section.become-community .wrapper ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 51px 0;
+}
+main section.become-community .wrapper ul li h3 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 43px;
+  line-height: 60px;
+  letter-spacing: -0.015em;
+  color: #FFFFFF;
+}
+main section.become-community .wrapper ul li h3 span {
+  background: linear-gradient(94.77deg, #5666F2 1.16%, #B756F2 62.07%, #F256D9 108.47%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+main section.become-community .wrapper ul li button {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  background: #5666F2;
+  border-radius: 10px;
+  padding: 18px 40px;
+  border: none;
+  outline: none;
+  color: #fff;
+  margin-top: 28px;
+}
+main section.become-community .wrapper ul li img {
+  margin-left: 60px;
+}
+main section.investors {
+  background: #F9F9FF;
+  height: 970px;
+}
+main section.investors h6 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  color: #4C4C4C;
+  padding-top: 70px;
+  padding-bottom: 36px;
+}
+main section.investors .bx-wrapper {
+  position: relative;
+  border-radius: 10px;
+  padding: 50px 40px;
+  width: 874px;
+  margin: auto;
+  margin-bottom: 70px;
+}
+main section.investors .bx-wrapper::after {
+  content: "";
+  background: url("/img/carbon_quotes.svg") center center no-repeat;
+  background-size: 100%;
+  position: absolute;
+  left: -48px;
+  z-index: 9;
+  top: -33px;
+  width: 84.22px;
+  height: 84.22px;
+}
+main section.investors .bx-wrapper .bx-controls-direction {
+  display: none;
+}
+main section.investors .bx-wrapper .bx-pager {
+  position: absolute;
+  bottom: 30px;
+  right: -380px;
+}
+main section.investors .bx-wrapper .bx-pager.bx-default-pager a {
+  background: transparent;
+  border: 1px solid #5666F2;
+}
+main section.investors .bx-wrapper .bx-pager.bx-default-pager a.active {
+  background: #5666F2;
+}
+main section.investors .sliders ul {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+main section.investors .sliders ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+main section.investors .sliders ul li:first-child {
+  height: 142px;
+}
+main section.investors .sliders ul li:last-child {
+  width: 570px;
+}
+main section.investors .sliders ul li h6 {
+  padding: 0;
+  margin: 0;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 126%;
+  letter-spacing: 0.04em;
+  color: #4C4C4C;
+}
+main section.investors .sliders ul li span {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 126%;
+  letter-spacing: 0.04em;
+  color: #4C4C4C;
+}
+main section.investors .sliders ul li p {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 126%;
+  letter-spacing: 0.04em;
+  color: #9F9F9F;
+  padding-left: 61px;
+}
+main section.investors .form-section {
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
+  box-shadow: -3px -3px 16px rgba(0, 0, 0, 0.1882352941);
+  border-radius: 20px;
+  position: relative;
+  z-index: 2;
+}
+main section.investors .form-section .form-body {
+  display: flex;
+  height: 638px;
+}
+main section.investors .form-section .form-body .leftSec,
+main section.investors .form-section .form-body .rightSec {
+  width: 50%;
+}
+main section.investors .form-section .form-body .rightSec {
+  width: 60%;
+}
+main section.investors .form-section .form-body .leftSec {
+  position: relative;
+}
+main section.investors .form-section .form-body .leftSec .form_bg_img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+main section.investors .form-section .form-body .leftSec p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main section.investors .form-section .form-body .leftSec p img {
+  width: 395px;
+  height: 121px;
+}
+main section.investors .form-section .form-body .leftSec p span {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -216px;
+  text-align: center;
+  color: #fff;
+}
+main section.investors .form-section .form-body .rightSec {
+  padding: 50px 30px;
+}
+main section.investors .form-section .form-body .rightSec .invest-form h5 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  text-transform: capitalize;
+  color: #122348;
+}
+main section.investors .form-section .form-body .rightSec .invest-form ul {
+  display: flex;
+}
+main section.investors .form-section .form-body .rightSec .invest-form ul li {
+  background: #F3F3FD;
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin-right: 18px;
+  margin-top: 37px;
+  margin-bottom: 37px;
+}
+main section.investors .form-section .form-body .rightSec .invest-form ul li:last-child {
+  margin-right: 0;
+}
+main section.investors .form-section .form-body .rightSec .invest-form form {
+  display: flex;
+  flex-direction: column;
+  background: #F9F9FF;
+  padding: 19px 11px;
+  border-radius: 10px;
+  margin-bottom: 37px;
+}
+main section.investors .form-section .form-body .rightSec .invest-form form label {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #323232;
+}
+main section.investors .form-section .form-body .rightSec .invest-form form input {
+  background: #FFFFFF;
+  border-radius: 10px;
+  padding: 16px 20px;
+  border: none;
+}
+main section.investors .form-section .form-body .rightSec .invest-form form ul li {
+  padding: 0;
+  margin-right: 18px;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+main section.investors .form-section .form-body .rightSec .invest-form form ul li button {
+  border: 1px solid #5666F2;
+  padding: 12px 16px;
+  background: transparent;
+  border-radius: 10px;
+  color: #5666F2;
+}
+main section.investors .form-section .form-body .rightSec .invest-form .totalSec p {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+main section.investors .form-section .form-body .rightSec .invest-form .totalSec p span {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #3340B0;
+}
+main section.investors .form-section .form-body .rightSec .invest-form .investBtn {
+  background: #5666F2;
+  border-radius: 10px;
+  width: 100%;
+  padding: 18px 40px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  border: none;
+  outline: none;
+}
+main section.investors .form-section .form-body .rightSec .invest-form .investBtn:hover {
+  color: #ffffff;
+}
+
+footer {
+  background: #14172B;
+  padding-top: 190px;
+}
+footer .wrapper ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .wrapper ul li {
+  padding: 11px;
+}
+footer .wrapper ul li a {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  text-transform: capitalize;
+  color: #FBFDFF;
+}
+footer .wrapper ul li:first-child {
+  width: 360px;
+  display: flex;
+  align-items: center;
+  margin-right: 64px;
+}
+footer .wrapper ul li:first-child a {
+  margin-right: 20px;
+}
+footer .wrapper ul li:first-child p {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FBFDFF;
+}
+footer .wrapper ul li:last-child {
+  display: flex;
+  justify-content: center;
+}
+footer .wrapper hr {
+  background: rgba(251, 253, 255, 0.4);
+}
+footer .wrapper .copy-right {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: capitalize;
+  color: #FBFDFF;
+  margin: 34px 35px;
+  text-align: center;
+}
+
+#bookAppoinment .modal-dialog {
+  min-width: 1268px;
+}
+#bookAppoinment .modal-dialog .modal-content {
+  height: 948px;
+  padding: 50px 86px 68px 60px;
+}
+#bookAppoinment .modal-dialog .modal-content button.close {
+  position: absolute;
+  right: 86px;
+  top: 50px;
+  z-index: 9;
+}
+#bookAppoinment .modal-dialog .modal-content .modal-body {
+  padding: 0;
+}
+#bookAppoinment .modal-dialog .modal-content .modal-body h3 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43px;
+  display: flex;
+  align-items: flex-end;
+  text-transform: capitalize;
+  color: #122348;
+}
+#bookAppoinment .modal-dialog .modal-content .modal-body p {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #4C4C4C;
+  margin-bottom: 60px;
+}
+#bookAppoinment .modal-dialog .modal-content .modal-body form ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#bookAppoinment .modal-dialog .modal-content .modal-body form ul li {
+  width: 546px;
+  margin-bottom: 40px;
+  float: right;
+}
+#bookAppoinment .modal-dialog .modal-content .modal-body form ul li label {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #323232;
+  margin: 0;
+  padding-bottom: 10px;
+}
+#bookAppoinment .modal-dialog .modal-content .modal-body form ul li input,
+#bookAppoinment .modal-dialog .modal-content .modal-body form ul li select {
+  background: #F9F9FF;
+  border-radius: 10px;
+  padding: 16px 20px;
+  width: 100%;
+  border: none;
+}
+#bookAppoinment .modal-dialog .modal-content .modal-body form ul li select {
+  appearance: none;
+  background: url("../img/selectdownarr.svg") center center no-repeat, #F9F9FF;
+  background-size: 16px;
+  background-position: right 20px top 24px;
+}
+#bookAppoinment .modal-dialog .modal-content .modal-body form ul li:nth-child(6) .select-time {
+  width: 541px;
+  height: auto;
+  background: #F9F9FF;
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin-bottom: 14px;
+}
+#bookAppoinment .modal-dialog .modal-content .modal-body form ul li:nth-child(6) .select-time ul li {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+#bookAppoinment .modal-dialog .modal-content .modal-body form ul li:nth-child(6) .select-time ul li span {
+  display: flex;
+  align-items: start;
+}
+#bookAppoinment .modal-dialog .modal-content .modal-body form ul li:nth-child(6) .select-time ul li span p {
+  display: flex;
+  justify-content: space-between;
+  width: 88px;
+  height: 38px;
+  border: 1.5px solid #D8D8F9;
+  border-radius: 5px;
+  padding: 3px;
+  margin: 0;
+  margin-left: 12px;
+}
+#bookAppoinment .modal-dialog .modal-content .modal-body form ul li:nth-child(6) .select-time ul li span p small {
+  width: 35.96px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #5666F2;
+  border-radius: 4px;
+}
+#bookAppoinment .modal-dialog .modal-content .modal-body form ul li:nth-child(6) .select-time ul li span p small.active {
+  background: #5666F2;
+  color: #fff;
+}
+#bookAppoinment .modal-dialog .modal-content .modal-body form ul li:nth-child(6) .select-time ul li span select {
+  padding: 0px;
+  background-position: right 13px top 16px;
+  background-size: 10px;
+  border: 1px solid #5666F2;
+  border-radius: 4px;
+  padding: 6px 15px 6px 18px;
+  width: 100px;
+  height: 38px;
+  margin-bottom: 24px;
+}
+#bookAppoinment .modal-dialog .modal-content .modal-body form ul li:nth-child(6) .select-time ul li:last-child {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ADADAD;
+}
+#bookAppoinment .modal-dialog .modal-content .modal-body form ul li:nth-child(6) .select-time ul li:last-child select {
+  width: 116px;
+  height: 38px;
+  padding: 0;
+}
+#bookAppoinment .modal-dialog .modal-content .modal-body form ul li:nth-child(6) .select-time ul li:last-child span {
+  display: flex;
+  align-items: center;
+}
+#bookAppoinment .modal-dialog .modal-content .modal-body form ul li:nth-child(6) .textareatype textarea {
+  height: 104px;
+  width: 100%;
+  resize: none;
+  background: #F9F9FF;
+  border-radius: 10px;
+  padding: 16px 20px;
+  border: none;
+}
+#bookAppoinment .modal-dialog .modal-content .modal-body form button.submitBtn {
+  position: absolute;
+  right: 0;
+  background: #5666F2;
+  border-radius: 10px;
+  width: 277px;
+  height: 55px;
+  color: #fff;
+  border: none;
+}
+
+#thankyou .modal-dialog {
+  max-width: 1032px;
+}
+#thankyou .modal-dialog .modal-content {
+  height: 595px;
+}
+#thankyou .modal-dialog .modal-content button.close {
+  position: absolute;
+  right: 86px;
+  top: 50px;
+  z-index: 9;
+}
+#thankyou .modal-dialog .modal-content .modal-body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#thankyou .modal-dialog .modal-content .modal-body .wrapper {
+  width: 446px;
+  height: 323px;
+  text-align: center;
+}
+#thankyou .modal-dialog .modal-content .modal-body .wrapper img {
+  margin-bottom: 40px;
+}
+#thankyou .modal-dialog .modal-content .modal-body .wrapper h5 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: #14172B;
+}
+#thankyou .modal-dialog .modal-content .modal-body .wrapper p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ADADAD;
+  margin-bottom: 43px;
+}
+#thankyou .modal-dialog .modal-content .modal-body .wrapper button.registerBtn {
+  background: #5666F2;
+  border-radius: 10px;
+  padding: 18px 40px;
+  border: none;
+  width: 277px;
+  color: #FFFFFF;
+}
+
+#upcomingappointment .modal-dialog {
+  position: absolute;
+  right: 30px;
+  max-width: 416px;
+}
+#upcomingappointment .modal-dialog .modal-content {
+  height: 176px;
+  padding: 17px 91px 23px 26px;
+}
+#upcomingappointment .modal-dialog .modal-content button.close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+#upcomingappointment .modal-dialog .modal-content .wrapper .content h6 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  color: #14172B;
+}
+#upcomingappointment .modal-dialog .modal-content .wrapper .content ul {
+  display: flex;
+  justify-content: space-between;
+  width: 299px;
+  margin-bottom: 1rem;
+}
+#upcomingappointment .modal-dialog .modal-content .wrapper .content ul li:nth-child(2) {
+  position: relative;
+}
+#upcomingappointment .modal-dialog .modal-content .wrapper .content ul li:nth-child(2) hr {
+  background: #4C4C4C;
+  width: 1px;
+  height: 43px;
+  position: absolute;
+  top: -11px;
+}
+#upcomingappointment .modal-dialog .modal-content .wrapper .content ul li p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #4C4C4C;
+}
+#upcomingappointment .modal-dialog .modal-content .wrapper .content ul li p span {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  color: #14172B;
+}
+#upcomingappointment .modal-dialog .modal-content .wrapper .content a {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  text-decoration-line: underline;
+  color: #5666F2;
+}
+
+#ui-datepicker-div {
+  width: 546px;
+  background: #F9F9FF;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  height: auto;
+  border: none;
+}
+#ui-datepicker-div .ui-datepicker-header {
+  background: transparent;
+  border: none;
+}
+#ui-datepicker-div .ui-datepicker-header .ui-datepicker-prev .ui-icon {
+  background: url("../img/u_angle-left-b.svg");
+  background-size: 100%;
+  width: 24px;
+  height: 24px;
+}
+#ui-datepicker-div .ui-datepicker-header .ui-datepicker-next .ui-icon {
+  background: url("../img/u_angle-right-b.svg");
+  background-size: 100%;
+  width: 24px;
+  height: 24px;
+}
+#ui-datepicker-div .ui-datepicker-header .ui-datepicker-title span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 24px;
+  color: #5666F2;
+}
+#ui-datepicker-div .ui-datepicker-calendar th {
+  width: 72.71px;
+  height: 34.67px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 14px;
+  color: #ADADAD;
+}
+#ui-datepicker-div .ui-datepicker-calendar tbody tr td a.ui-state-default {
+  border: none;
+  background: transparent;
+  font-weight: normal;
+  color: #454545;
+  width: 72.71px;
+  height: 34.67px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#ui-datepicker-div .ui-datepicker-calendar tbody tr td a.ui-state-default.ui-state-highlight {
+  color: #5666F2;
+  font-weight: 600;
+  font-size: 15px;
+}
+#ui-datepicker-div .ui-datepicker-calendar tbody tr td a.ui-state-default:hover {
+  background: #5666F2;
+  border-radius: 8px;
+  color: #ffffff !important;
+}
+
+/*# sourceMappingURL=style.css.map */
