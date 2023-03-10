@@ -1,0 +1,609 @@
+@media screen and (max-width: 576px) {
+    .navbar-brand {
+        img {
+            height: 38px;
+        }
+    }
+
+    main section {
+        &.banner-section {
+            display: block !important;
+            height: 100vh;
+            padding-top: 116px;
+
+            .container {
+                height: 100%;
+                position: relative;
+
+                .row,
+                .col {
+                    height: 100%;
+                }
+
+                .banner-sec {
+                    height: 100%;
+
+                    .mobile-view {
+                        position: absolute;
+                        left: 15px;
+                        right: 15px;
+                        bottom: 40px;
+                    }
+
+                    h1 {
+                        font-weight: 700;
+                        font-size: 28px;
+                        line-height: 40px;
+                    }
+
+                    p {
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 20px;
+                        width: auto;
+                    }
+
+                    .twoBtns {
+                        gap: 18px;
+                        justify-content: space-between;
+
+                        button {
+                            font-weight: 600;
+                            font-size: 15px;
+                            line-height: 18px;
+                            padding: 15px 36px;
+                        }
+                    }
+
+                    .grey-sec {
+                        height: auto;
+                        width: 100%;
+                        background: transparent;
+                        padding: 0px;
+
+                        .grey-sec-child {
+                            width: auto;
+                            padding: 0px 11px;
+
+                            border-right: 0.5px solid rgb(255 255 255 / 60%);
+
+                            span {
+                                font-weight: 700;
+                                font-size: 18px;
+                                line-height: 22px;
+                                color: #FFFFFF;
+                            }
+
+                            p {
+                                font-weight: 400;
+                                font-size: 12px;
+                                line-height: 14px;
+                                color: #FFFFFF;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.why-invest {
+            .invest-content {
+                padding-top: 34px;
+                display: block;
+
+                h5 {
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 30px;
+                    margin-bottom: 40px;
+                }
+
+                ul.invest-sections {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+
+                    li {
+                        width: calc(100%/2 - 20px);
+                        background: #FFFFFF;
+                        box-shadow: 0px 2px 8px rgb(0 0 0 / 15%);
+                        border-radius: 10px;
+                        margin: 9px;
+                        padding: 17px;
+
+                        img {
+                            width: 48px;
+                            height: 48px;
+                            margin: 0 auto;
+                            display: block;
+                        }
+
+                        h6 {
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 17px;
+                        }
+
+                        p {
+                            font-weight: 300;
+                            font-size: 12px;
+                            line-height: 14px;
+                        }
+                    }
+                }
+
+                .token-folio {
+                    position: static;
+
+                    .tokenfolio_con {
+                        background: url(../img/black_patch.svg) center center no-repeat;
+                        background-size: cover;
+                        padding: 20px;
+                        background-color: #14172B;
+                        box-shadow: 0px 5px 20px rgb(0 0 0 / 20%);
+                        border-radius: 10px;
+                        margin-top: 40px;
+
+                        ul {
+                            display: block;
+                            width: auto;
+
+                            li {
+                                display: block;
+                                height: auto;
+                                text-align: center;
+
+                                h4 {
+                                    font-weight: 700;
+                                    font-size: 28px;
+                                    line-height: 34px;
+                                    text-align: center;
+                                }
+
+                                p {
+                                    font-weight: 400;
+                                    font-size: 12px;
+                                    line-height: 20px;
+                                    text-align: center;
+                                    margin: 20px 0px;
+                                }
+
+                                button {
+                                    font-weight: 600;
+                                    font-size: 15px;
+                                    line-height: 18px;
+                                    padding: 17px 28px;
+                                    margin: 0 auto;
+                                    display: inline-block;
+                                    margin-bottom: 23px;
+                                }
+
+                                img {
+                                    width: 150px;
+                                    margin: 0 auto;
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.solving-problem {
+            padding-top: 50px;
+            padding-bottom: 50px;
+
+            .content {
+                h6 {
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 30px;
+                    text-align: center;
+                    display: block;
+                    margin-bottom: 26px;
+
+                }
+
+                #accordion .card {
+
+                    .collapse,
+                    .collapsing {
+                        font-size: 12px;
+                        line-height: 126%;
+                        padding-left: 46px;
+                        padding-right: 18px;
+                    }
+
+                    .card-header {
+                        padding: 0;
+                        border: none;
+                        background: no-repeat;
+
+                        h5 button {
+                            p {
+                                font-size: 14px;
+                                line-height: 126%;
+
+                                img {
+                                    margin-right: 10px;
+                                    max-width: 32px;
+                                }
+                            }
+
+                            img {
+                                max-width: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .content-img {
+                margin-top: 17px;
+
+                img {
+                    border-radius: 10px;
+                }
+            }
+        }
+
+        &.cards {
+            padding: 40px 0;
+
+            .cards-item .cards-content {
+                h5 {
+                    font-size: 18px;
+                    line-height: 20px;
+                }
+
+                p {
+                    font-size: 14px;
+                    line-height: 17px;
+                }
+            }
+
+            .col {
+                padding: 0;
+            }
+        }
+
+        &.partnerships-brands {
+            .imgslider {
+                padding: 40px 0px;
+            }
+
+            h6 {
+                font-size: 26px;
+                line-height: 31px;
+            }
+        }
+
+        &.become-community {
+            .wrapper ul {
+                display: block;
+                text-align: center;
+
+                li {
+                    img {
+                        margin: 0;
+                        width: 100%;
+                        border-radius: 10px;
+                    }
+
+                    h3 {
+                        font-size: 24px;
+                        line-height: 29px;
+                        text-align: center;
+                        letter-spacing: -0.015em;
+                    }
+
+                    button {
+                        font-size: 15px;
+                        line-height: 18px;
+                        padding: 17px 34px;
+                        margin: 0 auto;
+                        margin-top: 20px;
+                        margin-bottom: 30px;
+                    }
+                }
+
+            }
+        }
+
+        &.investors {
+            height: auto;
+            background: linear-gradient(180deg, rgba(249, 249, 255, 1) 86%, rgba(20, 23, 43, 1) 86%);
+
+            h6 {
+                font-size: 26px;
+                line-height: 31px;
+                padding: 40px 0px;
+            }
+
+            .owl-theme .owl-nav.disabled+.owl-dots {
+                position: relative;
+                bottom: 37px;
+                right: 17px;
+
+                span {
+                    width: 9px !important;
+                    height: 9px !important;
+                }
+            }
+
+            .testimonial {
+                width: 100%;
+                margin: 0 auto;
+                padding: 0px 15px;
+
+                &:after {
+                    content: "";
+                    top: -21px;
+                    left: -13px;
+                    z-index: 1;
+                    width: 58px;
+                    height: 58px;
+                    background-size: contain;
+                }
+
+                .slider-item {
+                    display: block;
+                    padding: 25px 34px;
+
+                    .left {
+                        width: 100%;
+                        margin-right: 0;
+
+                        img {
+                            width: 63px;
+                            height: 63px;
+                        }
+
+                        h5 {
+                            font-size: 12px;
+                            line-height: 126%;
+                            letter-spacing: 0.04em;
+                            margin-top: 12px;
+                            margin-bottom: 0px;
+                        }
+
+                        span {
+                            font-size: 12px;
+                            line-height: 126%;
+                            letter-spacing: 0.04em;
+                        }
+                    }
+
+                    .right {
+                        p {
+                            font-size: 12px;
+                            line-height: 126%;
+                        }
+                    }
+                }
+            }
+
+            .form-section {
+                border-radius: 0;
+                box-shadow: none;
+                border: none;
+                background: transparent;
+
+                .form-body {
+                    display: block;
+                    height: auto;
+
+
+                    .leftSec {
+                        width: 100%;
+
+                        .form_bg_img {
+                            border-radius: 0px;
+                        }
+
+                        .text-sec {
+                            width: 100%;
+                            padding: 0px 15px;
+                            text-align: center;
+
+                            span {
+                                display: block;
+                                position: static;
+                            }
+
+                            img {
+                                width: 218px;
+                            }
+                        }
+                    }
+
+                    .rightSec {
+                        width: 100%;
+                        overflow: hidden;
+                        box-shadow: 0px 0px 40px rgb(0 0 0 / 10%);
+                        border-radius: 10px;
+                        margin-top: 30px;
+                        background: #fff;
+                        padding: 35px 16px;
+
+                        .invest-form {
+                            overflow: hidden;
+
+                            h5 {
+                                line-height: 126%;
+                                text-align: center;
+                                letter-spacing: 0.05em;
+                                font-size: 20px;
+                            }
+
+                            .mobile-view-scroll {
+                                overflow: auto;
+                                white-space: nowrap;
+                                margin-bottom: 21px;
+                                padding-top: 12px;
+                            }
+
+                            ul {
+                                display: block;
+                                min-width: 548px;
+
+
+
+                                li {
+                                    padding: 12px 16px;
+                                    margin-right: 18px;
+                                    margin-top: 0;
+                                    margin-bottom: 0;
+                                    display: inline-block;
+                                    font-size: 14px;
+                                    line-height: 17px;
+                                }
+                            }
+
+                            form {
+                                ul li {
+                                    font-size: 10px;
+                                    line-height: 12px;
+                                }
+
+                                label {
+                                    font-size: 14px;
+                                    line-height: 180%;
+                                }
+                            }
+
+                            .totalSec p {
+                                span {
+                                    font-size: 14px;
+                                    line-height: 180%;
+                                }
+                            }
+
+                            .investBtn {
+                                font-size: 15px;
+                                line-height: 18px;
+                                padding: 16px 36px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.howitworks {
+            height: auto;
+            padding-bottom: 40px;
+
+            h5 {
+                font-size: 26px;
+                line-height: 31px;
+                padding-top: 41px;
+            }
+
+            .wrapper {
+                display: block;
+
+                .dottedArr1,
+                .dottedArr2 {
+                    display: none;
+                }
+
+                .box-body {
+                    width: 100%;
+                    text-align: center;
+
+                    .box-content {
+                        background: url(../img/curvebox.svg) center center no-repeat;
+                        background-size: 366px 318px;
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+                        padding: 45px 57px;
+                        min-height: 326px;
+
+                        img {
+                            width: 50px;
+                            height: 50px;
+                            margin-bottom: 30px;
+                            margin-top: 31px;
+                        }
+
+                        h6 {
+                            font-size: 18px;
+                            line-height: 22px;
+                        }
+
+                        p {
+                            font-size: 12px;
+                            line-height: 19px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        padding-top: 26px;
+
+        .wrapper ul {
+            display: block;
+            text-align: center;
+
+            li img {
+                width: 50.45px;
+            }
+
+            li.social-footer {
+                img {
+                    width: 46px;
+                }
+            }
+        }
+    }
+
+    #bookAppoinment .modal-dialog{
+        min-width: 100%;
+        .modal-content {
+            height: 948px;
+            padding: 25px 22px;
+            display: block;
+    
+            .modal-body {
+                h3 {
+                    font-size: 20px;
+                    line-height: 126%;
+                }
+    
+                p {
+                    font-size: 12px;
+                    line-height: 126%;
+                    margin-bottom: 36px;
+                }
+    
+                form ul {
+                    display: block;
+                    width: 100%;
+    
+                    li {
+                        width: auto;
+                        margin-bottom: 23px;
+                        float: inherit;
+    
+                        label {
+                            font-size: 14px;
+                            line-height: 180%;
+                        }
+    
+                        input {
+                            font-size: 12px;
+                            line-height: 180%;
+                            padding: 12px 16px px;
+                        }
+                    }
+                }
+            }
+        }
+    } 
+}

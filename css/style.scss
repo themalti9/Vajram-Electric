@@ -494,6 +494,7 @@ main {
             border-radius: 20px;
             position: relative;
             transition: 0.3s;
+            margin-bottom: 15px;
 
             img {
                 width: 100%;
@@ -928,7 +929,7 @@ main {
                         border-bottom-left-radius: 20px;
                     }
 
-                    p {
+                    .text-sec {
                         position: absolute;
                         top: 50%;
                         left: 50%;
@@ -1054,7 +1055,8 @@ main {
                             color: #FFFFFF;
                             border: none;
                             outline: none;
-cursor: pointer;
+                            cursor: pointer;
+
                             &:hover {
                                 color: #ffffff;
                             }
@@ -1117,6 +1119,16 @@ footer {
                     display: flex;
                     justify-content: center;
                 }
+            }
+            li.social-footer{
+               a{
+                display: inline-block;
+                border: 1px solid #B6B9BC;
+                border-right: none;
+                &:last-child{
+                    border-right: 1px solid #B6B9BC;
+                }
+               }
             }
         }
 
@@ -1571,3 +1583,5 @@ footer {
         }
     }
 }
+
+@import "mobile.scss";
